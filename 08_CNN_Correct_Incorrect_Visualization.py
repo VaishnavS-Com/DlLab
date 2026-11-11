@@ -1,4 +1,4 @@
-# Q9: CNN for MNIST digit recognition; show correct and incorrect predictions
+# CNN for MNIST digit recognition; show correct and incorrect predictions
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -59,7 +59,6 @@ if len(correct_indices) > 0:
         plt.axis("off")
     plt.suptitle("Correctly Classified Images")
     plt.tight_layout()
-    plt.savefig("Q9_correct_predictions.png")
     plt.show()
 
 # 7. Display incorrectly classified examples
@@ -73,7 +72,6 @@ if len(incorrect_indices) > 0:
         plt.axis("off")
     plt.suptitle("Incorrectly Classified Images")
     plt.tight_layout()
-    plt.savefig("Q9_incorrect_predictions.png")
     plt.show()
 else:
     print("No incorrectly classified images were found.")

@@ -1,4 +1,4 @@
-# Q5: LeNet-like CNN for MNIST handwritten digit classification
+# LeNet-like CNN for MNIST handwritten digit classification
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -51,7 +51,6 @@ for i in range(10):
     plt.title(f"Predicted: {predicted_labels[i]}\nActual: {y_test[i]}")
     plt.axis("off")
 plt.tight_layout()
-plt.savefig("Q5_sample_predictions.png")
 plt.show()
 print("Experiment completed successfully!")
 

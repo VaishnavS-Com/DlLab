@@ -1,4 +1,4 @@
-# Q4: Compare Xavier and Kaiming initialization in an FFNN
+# Compare Xavier and Kaiming initialization in an FFNN
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import mnist
@@ -55,7 +55,6 @@ plt.ylabel("Loss")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("Q4_training_loss.png")
 plt.show()
 
 plt.figure(figsize=(8, 5))
@@ -67,7 +66,6 @@ plt.ylabel("Loss")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("Q4_validation_loss.png")
 plt.show()
 
 print("\nMethod\t\tTest accuracy\tTest loss")

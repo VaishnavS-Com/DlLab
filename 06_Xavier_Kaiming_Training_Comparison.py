@@ -1,4 +1,4 @@
-# Q7: Compare Xavier and Kaiming initialization in a neural network
+# Compare Xavier and Kaiming initialization in a neural network
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import mnist
@@ -36,9 +36,9 @@ for name, initializer in initializers.items():
     results[name] = (test_loss, test_accuracy)
     print(f"Test accuracy: {test_accuracy * 100:.2f}%")
 
-for metric, title, filename in [
-    ("accuracy", "Training Accuracy Comparison", "Q7_training_accuracy.png"),
-    ("loss", "Training Loss Comparison", "Q7_training_loss.png")
+for metric, title in [
+    ("accuracy", "Training Accuracy Comparison"),
+    ("loss", "Training Loss Comparison")
 ]:
     plt.figure(figsize=(8, 5))
     for name in initializers:
@@ -49,7 +49,6 @@ for metric, title, filename in [
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(filename)
     plt.show()
 
 print("\nMethod\tTest accuracy\tTest loss")

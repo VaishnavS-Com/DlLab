@@ -1,4 +1,4 @@
-# Q3: Compare ReLU, Sigmoid and Tanh activation functions in an FFNN
+# Compare ReLU, Sigmoid and Tanh activation functions in an FFNN
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import mnist
@@ -57,7 +57,6 @@ plt.ylabel("Test accuracy (%)")
 plt.ylim(0, 100)
 plt.grid(axis="y")
 plt.tight_layout()
-plt.savefig("Q3_activation_comparison.png")
 plt.show()
 print("Experiment completed successfully!")
 

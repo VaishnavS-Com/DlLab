@@ -1,4 +1,4 @@
-# Q8: CNN architecture with convolution, pooling, flatten and dense layers
+# CNN architecture with convolution, pooling, flatten and dense layers
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import mnist
@@ -47,7 +47,6 @@ plt.ylabel("Accuracy")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("Q8_accuracy.png")
 plt.show()
 print("Experiment completed successfully!")
 

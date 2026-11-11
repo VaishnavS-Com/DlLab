@@ -1,4 +1,4 @@
-# Q2: FFNN for handwritten digit classification using MNIST
+# FFNN for handwritten digit classification using MNIST
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import mnist
@@ -42,7 +42,6 @@ plt.ylabel("Accuracy")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("Q2_accuracy.png")
 plt.show()
 print("Experiment completed successfully!")
 
